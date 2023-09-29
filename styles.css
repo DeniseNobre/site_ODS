@@ -1,0 +1,274 @@
+* {
+ 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    width: 100%;
+ }
+
+main {
+	width: 100%;
+}
+
+section {
+	text-align: center;
+}
+
+#inicio {
+	background-image: url("imagens/fundo_inicio.jpg");
+	background-size : cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+#menu-div {
+	display: flex;
+	justify-content: space-between;
+}
+
+header {
+	text-align: left;
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+	position: relative;
+}
+
+#menu {
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px 0 20px 0;
+	list-style: none;
+	background-color: #5e7c9c;
+	font-family: 'Croissant One', cursive;
+}
+
+.link-menu {
+	padding: 2vw;
+	text-decoration: none;
+	color: #000000;
+}
+
+.link-menu:hover {
+	color: #ffffff;
+}
+
+span {
+	visibility: hidden;
+}
+
+h1 {
+	margin: 10px;
+	font-size: 2.4em;
+	color: #ffffff;
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+}
+
+h2 {
+	margin: 10px;
+	color: #ffffff;
+	font-family: monospace;
+	font-size: 2.1em;
+	padding-top: 1.5em;
+	padding-bottom: 2.5em;
+}
+
+#texto-energia {
+	margin: 10px;
+	padding: 1em 1em;
+	font-size: 1.7rem;
+	font-family: Book Antiqua, sans-serif;
+	border: 10px double #5e7c9c;
+}
+
+h3 {
+	font-size: 2em;
+	padding: 5vw 0 1vw 0;
+	border-bottom: 5px solid #5e7c9c;
+}
+
+.classe-padding {
+	padding: 0 6vw;
+}
+
+#titulo-s-ods {
+	border-bottom: 5px solid #5e7c9c;
+}
+
+#img-ods {
+	max-width: 600px;
+	min-width: 300px;
+	width: 100%;
+	margin: 1vw 0 0 0;
+}
+
+#p-ods {
+	text-align: justify;
+	font-size: 1.5em;
+	padding: 1em 0 1em 0;
+	text-indent: 30px;
+}
+
+.video {
+	margin: 2vw 0;
+	width: 560px; 
+	height: 315px;
+}
+
+#img-energia {
+	display: flex;
+	justify-content: space-around;
+}
+
+.img-dados {
+	max-width: 600px;
+	min-width: 300px;
+	width: 40%;
+	margin: 3vw 1vw;
+	border: 5px solid #5e7c9c;
+}
+
+#s-sobre-mim {
+	border: 10px double #5e7c9c;
+	max-width: 600px;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 2vw;
+}
+
+#titulo-sobre-mim {
+	margin: 1vw;
+	font-family: 'Croissant One', cursive;
+}
+
+#d-sobre {
+	width: 400px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 auto;
+
+}
+
+#img-foto {
+	width: 150px;
+	border-radius: 180px;
+}
+
+#p-sobre-mim {
+	padding: 2vw;
+}
+
+#fontes {
+	text-align: left;
+	margin: 20px;
+	font-size: 18px;
+}
+
+.fonte-site {
+	text-decoration: none;
+	color: #000000;
+	font-size: 15px;
+} 
+
+.fonte-site:hover {
+	text-decoration: solid;
+	color: #5e7c9c;
+}
+
+footer {
+	background-color: #5e7c9c;
+	color: #ffffff;
+	text-align: center;
+	padding: 2vw 0;
+
+}
+
+@media all and (max-width: 600px) {
+	#menu-div {
+		display: flex;
+	}
+
+	#menu {
+		display: none;
+	}
+	#span-div {
+		text-align: right;
+		width: 70%;
+	}
+
+	span {
+		visibility: unset;
+		margin-top: 2vw;
+	}
+
+	#texto-energia {
+		font-size: 1.3rem;
+		text-align: left;
+		font-family: Book Antiqua, sans-serif;
+		}
+
+	#s-ods {
+		padding: 0 4vw;
+	}
+
+	.video {
+		width: 300px;
+		height: 150px;
+	}
+
+	#p-ods {
+		text-align: justify;
+		font-size: 1.1em;
+		padding: 1em 0 1em 0;
+		text-indent: 30px;
+	}
+
+	#s-ods7 {
+		padding: 0 3vw;
+	}
+
+	#brasil-energia {
+		padding: 0 3vw;
+	}
+
+	#img-energia {
+		display: block;
+	}
+
+	.img-dados {
+	width: 300px;
+	margin: 3vw 0;
+	border: 5px solid #5e7c9c;
+	}
+
+	#s-sobre-mim {
+	border: 10px double #5e7c9c;
+	width: 300px;
+	}
+
+	#titulo-sobre-mim {
+		margin: 1vw;
+	}
+
+	#d-sobre {
+		display: block;
+		width: revert;
+	}
+
+	#img-foto {
+		width: 150px;
+		border-radius: 180px;
+	}
+
+	#p-sobre-mim {
+		padding: 2vw;
+	}
+}
